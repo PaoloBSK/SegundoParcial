@@ -55,3 +55,8 @@ const updateAdress = async (req, res)=>{
     res.send(404);
 }
 };
+
+module.exports = {
+    updateAdress,
+    getUser,
+ }

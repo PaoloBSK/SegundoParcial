@@ -7,3 +7,4 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use('/api', router)
 app.listen(apiPort, () => console.log(`server running on port ${apiPort}`));
+
