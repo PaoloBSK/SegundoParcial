@@ -64,18 +64,17 @@ const updateUserAddressById = (req,res) =>{
 const createuserid = (req,res) =>{
     try{
         const {body :  newUser} = req;
-        userData.create()
+        userData.push(newUser);
         res.send({
             status:200,
-                id,
-                email
+                userData
             
         })
     } catch(error) {
     console.log(error);
     res.send({
         status: 500,
-            
+        user: {}
     })
     }       
 
